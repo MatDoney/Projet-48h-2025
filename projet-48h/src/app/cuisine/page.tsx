@@ -17,7 +17,7 @@ export default function Cuisine() {
                     <DialogHeader>
                         <DialogTitle>Hamburger</DialogTitle>
                         <DialogDescription>
-                            
+                            MMMH BORGOR KING
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>

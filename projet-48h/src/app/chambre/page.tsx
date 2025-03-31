@@ -43,6 +43,8 @@ export default function Chambre() {
                 </DialogContent>
             </Dialog>
 
+            
+
             <Dialog>
                 <DialogTrigger className="absolute w-[90px] h-[67px] right-[45.5%] top-[35%] cursor-pointer hover:bg-red-600 opacity-20"></DialogTrigger>
                 <DialogContent className="top-[20%] w-[80%] h-[20%]">
@@ -52,21 +54,22 @@ export default function Chambre() {
                             Le coffre est verrouillé, il y a des traces de tentative d'effraction
                         </DialogDescription>
                     </DialogHeader>
+                    <InputOTP maxLength={4}>
+                        <InputOTPGroup>
+                            <InputOTPSlot index={0} />
+                            <InputOTPSlot index={1} />
+                        </InputOTPGroup>
+                        <InputOTPSeparator />
+                        <InputOTPGroup>
+                            <InputOTPSlot index={2} />
+                            <InputOTPSlot index={3} />
+                        </InputOTPGroup>
+                    </InputOTP>
                 </DialogContent>
-                <InputOTP maxLength={6}>
-                    <InputOTPGroup>
-                        <InputOTPSlot index={0} />
-                        <InputOTPSlot index={1} />
-                        <InputOTPSlot index={2} />
-                    </InputOTPGroup>
-                    <InputOTPSeparator />
-                    <InputOTPGroup>
-                        <InputOTPSlot index={3} />
-                        <InputOTPSlot index={4} />
-                        <InputOTPSlot index={5} />
-                    </InputOTPGroup>
-                </InputOTP>
             </Dialog>
+
+            <a href="/salle-de-bain" className="absolute w-[90px] h-[60px] right-[32%] top-[1%] cursor-pointer hover:bg-red-600 opacity-20"></a>
+            <a href="/salon" className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%] cursor-pointer hover:bg-red-600 opacity-20"></a>
         </div>
     );
 }
