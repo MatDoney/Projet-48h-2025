@@ -1,5 +1,5 @@
 export default function Comissariat() {
   return (
-    <div>page Comissariat</div>
+    <div className="h-screen w-screen bg-[url(/assets/image/salle-de-bain.png)] bg-no-repeat bg-cover"></div>
   );
 }

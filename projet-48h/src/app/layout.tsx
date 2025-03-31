@@ -41,6 +41,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let i = 0;
   return (
     <html lang="en">
       <body
@@ -50,7 +51,7 @@ export default function RootLayout({
           <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Button</Button></DrawerTrigger>
           <DrawerContent className="w-[25%] h-[40%]">
             <DrawerHeader>
-              <DrawerTitle>Game Progress</DrawerTitle>
+              <DrawerTitle>Map</DrawerTitle>
               <DrawerDescription></DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>

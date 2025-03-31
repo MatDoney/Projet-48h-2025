@@ -1,5 +1,5 @@
 export default function Salon() {
     return (
-      <div>page Salon</div>
+        <div className="h-screen w-screen bg-[url(/assets/image/salon.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5]"></div>
     );
   }
