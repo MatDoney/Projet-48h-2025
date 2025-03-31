@@ -23,7 +23,7 @@ export default function Cuisine() {
                 </DialogContent>
             </Dialog>
             <a href="/couloir" className="absolute w-[118px] h-[122px] top-[83.5%] right-[61%] hover:bg-red-700 opacity-20"/>
-            <a href="/couloir" className="absolute w-[118px] h-[122px] top-[1.5%] right-[78%] hover:bg-red-700 opacity-20"/>
+            <a href="/balcon" className="absolute w-[118px] h-[122px] top-[1.5%] right-[78%] hover:bg-red-700 opacity-20"/>
         </div>
     );
 }
