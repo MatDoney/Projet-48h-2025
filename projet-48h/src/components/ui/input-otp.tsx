@@ -14,6 +14,7 @@ function InputOTP({
   containerClassName?: string
 }) {
   return (
+
     <OTPInput
       data-slot="input-otp"
       containerClassName={cn(
@@ -23,6 +24,7 @@ function InputOTP({
       className={cn("disabled:cursor-not-allowed", className)}
       {...props}
     />
+
   )
 }
 
