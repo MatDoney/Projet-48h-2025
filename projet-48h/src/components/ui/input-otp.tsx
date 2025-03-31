@@ -14,17 +14,17 @@ function InputOTP({
   containerClassName?: string
 }) {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <OTPInput
-        data-slot="input-otp"
-        containerClassName={cn(
-          "flex items-center gap-2 has-disabled:opacity-50",
-          containerClassName
-        )}
-        className={cn("disabled:cursor-not-allowed", className)}
-        {...props}
-      />
-    </div>
+
+    <OTPInput
+      data-slot="input-otp"
+      containerClassName={cn(
+        "flex items-center gap-2 has-disabled:opacity-50",
+        containerClassName
+      )}
+      className={cn("disabled:cursor-not-allowed", className)}
+      {...props}
+    />
+
   )
 }
 
