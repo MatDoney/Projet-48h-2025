@@ -16,7 +16,7 @@ export default function Balcon() {
                 <DialogHeader>
                 <DialogTitle>le chien</DialogTitle>
                 <DialogDescription>
-                    le fameux chien du balcon
+                    le fameux chien du balcon, sur son collier il est écrit "Paul"
                 </DialogDescription>
                 </DialogHeader>
             </DialogContent>
@@ -34,8 +34,8 @@ export default function Balcon() {
             </DialogContent>
             </Dialog>
 
-            <a href="/cuisine" className="absolute w-[105px] h-[95px] top-[18%] right-[70.5%] hover:bg-red-700 opacity-20"/>
-            <a href="/salon" className="absolute w-[118px] h-[95px] top-[7%] right-[37.5%] hover:bg-red-700 opacity-20"/>
+            <a href="/cuisine" title='cuisine' className="absolute w-[105px] h-[95px] top-[18%] right-[70.5%] hover:bg-red-700 opacity-20"/>
+            <a href="/salon" title='salon' className="absolute w-[118px] h-[95px] top-[7%] right-[37.5%] hover:bg-red-700 opacity-20"/>
         </div>
     );
   }

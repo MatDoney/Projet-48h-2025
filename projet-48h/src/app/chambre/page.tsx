@@ -1,5 +1,5 @@
-
-
+'use client'
+import React, { useState } from "react";
 import {
     Dialog,
     DialogContent,
@@ -7,16 +7,28 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 
 import {
     InputOTP,
     InputOTPGroup,
     InputOTPSeparator,
     InputOTPSlot,
-} from "@/components/ui/input-otp"
+} from "@/components/ui/input-otp";
 
 export default function Chambre() {
+    const [otp, setOtp] = useState(""); // Utilisation d'une seule chaîne pour l'OTP
+    const [isUnlocked, setIsUnlocked] = useState(false);
+
+    const handleChange = (value: string) => {
+        setOtp(value);
+
+        // Vérifie si l'OTP complet est correct
+        if (value === "567882") {
+            setIsUnlocked(true);
+        }
+    };
+
     return (
         <div className="h-screen w-screen bg-[url(/assets/image/chambre.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5]">
             <Dialog>
@@ -25,7 +37,7 @@ export default function Chambre() {
                     <DialogHeader>
                         <DialogTitle>Main Ensanglantée</DialogTitle>
                         <DialogDescription>
-                            Une trace de main est dessinée avec du sang, à qui peut elle appartenir ?
+                            Une trace de main est dessinée avec du sang, le tueur à du s'appuyer sur la porte
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
@@ -37,13 +49,11 @@ export default function Chambre() {
                     <DialogHeader>
                         <DialogTitle>Trainée de sang</DialogTitle>
                         <DialogDescription>
-                            On dirait qu'on à trainé le corps, il a donc été déplacé
+                            On dirait qu'on a traîné le corps depuis la chambre, il a donc été déplacé.
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
             </Dialog>
-
-            
 
             <Dialog>
                 <DialogTrigger className="absolute w-[90px] h-[67px] right-[45.5%] top-[35%] cursor-pointer hover:bg-red-600 opacity-20"></DialogTrigger>
@@ -51,25 +61,39 @@ export default function Chambre() {
                     <DialogHeader>
                         <DialogTitle>Coffre Fort</DialogTitle>
                         <DialogDescription>
-                            Le coffre est verrouillé, il y a des traces de tentative d'effraction
+                            {isUnlocked
+                                ? "Un titre de propriété pour l'étoile J18365633+3847012, le nom de la victime y est signé au crayon."
+                                : "Le coffre est verrouillé, il y a des traces de tentative d'effraction."}
                         </DialogDescription>
                     </DialogHeader>
-                    <InputOTP maxLength={4}>
-                        <InputOTPGroup>
-                            <InputOTPSlot index={0} />
-                            <InputOTPSlot index={1} />
-                        </InputOTPGroup>
-                        <InputOTPSeparator />
-                        <InputOTPGroup>
-                            <InputOTPSlot index={2} />
-                            <InputOTPSlot index={3} />
-                        </InputOTPGroup>
-                    </InputOTP>
+                    {!isUnlocked && (
+                        <InputOTP
+                            maxLength={6}
+                            value={otp}
+                            onChange={handleChange}
+                        >
+                            <InputOTPGroup>
+                                <InputOTPSlot index={0} />
+                                <InputOTPSlot index={1} />
+                                <InputOTPSlot index={2} />
+                                <InputOTPSlot index={3} />
+                                <InputOTPSlot index={4} />
+                                <InputOTPSlot index={5} />
+                                <InputOTPSlot index={6} />
+                            </InputOTPGroup>
+                        </InputOTP>
+                    )}
                 </DialogContent>
             </Dialog>
 
-            <a href="/salle-de-bain" className="absolute w-[90px] h-[60px] right-[32%] top-[1%] cursor-pointer hover:bg-red-600 opacity-20"></a>
-            <a href="/salon" className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%] cursor-pointer hover:bg-red-600 opacity-20"></a>
+            <a
+                href="/salle-de-bain" title='salle de bain'
+                className="absolute w-[90px] h-[60px] right-[32%] top-[1%] cursor-pointer hover:bg-red-600 opacity-20"
+            />
+            <a
+                href="/salon" title='salon'
+                className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%] cursor-pointer hover:bg-red-600 opacity-20"
+            />
         </div>
     );
 }

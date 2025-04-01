@@ -43,15 +43,15 @@ export default function RootLayout({
 }>) {
   let i = 0;
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-hidden">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Drawer>
-          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Button</Button></DrawerTrigger>
+          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Rapport d'enquete</Button></DrawerTrigger>
           <DrawerContent className="w-[25%] h-[40%]">
             <DrawerHeader>
-              <DrawerTitle>Map</DrawerTitle>
+              <DrawerTitle>Rapport d'enquete</DrawerTitle>
               <DrawerDescription></DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>
