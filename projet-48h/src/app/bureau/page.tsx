@@ -14,6 +14,7 @@ import {
     InputOTPGroup,
     InputOTPSlot,
 } from "@/components/ui/input-otp";
+import { LinkButton } from "@/components/LinkButton";
 
 export default function Bureau() {
   const [otp, setOtp] = useState(""); // Utilisation d'une seule chaîne pour l'OTP
@@ -29,6 +30,7 @@ export default function Bureau() {
   };
   // Remplacez les \n par <br /> dans texteForum
   var texteForum = "<br />StarLover69 :Bernard, t’es vraiment le propriétaire de J18365633+3847012 ? C’est l’étoile la plus fascinante que j’ai jamais vue ! Comment t’as pu acquérir un tel trésor cosmique ?<br /><br />BernardNebuleuse :<br />Oui, je l’ai acquise lors d’une vente intergalactique. J’ai même un titre de propriété officiel signé au crayon, que je garde bien au chaud dans un coffre-fort sécurisé. 😎";
+
 
   return (
     <div className="h-screen w-screen bg-[url(/assets/image/bureau.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5] ">
@@ -73,14 +75,15 @@ export default function Bureau() {
         </DialogContent>
       </Dialog>
 
-      <a
-        href="/couloir"
-        className="absolute w-[118px] h-[105px] top-[87%] right-[59.5%] hover:bg-red-700 opacity-20"
-      />
-      <a
-        href="/salle-de-bain"
-        className="absolute w-[100px] h-[100px] top-[83%] right-[36%] hover:bg-red-700 opacity-20"
-      />
+      <LinkButton
+                href="/couloir" title='couloir'
+                className="absolute w-[118px] h-[105px] top-[87%] right-[59.5%]"
+            />
+            <LinkButton
+                href="/salle-de-bain" title='salle de bain'
+                className="absolute w-[100px] h-[100px] top-[83%] right-[36%]"
+            />
     </div>
   );
+
 }

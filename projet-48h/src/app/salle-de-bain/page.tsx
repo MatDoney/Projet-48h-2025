@@ -7,11 +7,12 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import { LinkButton } from '@/components/LinkButton';
 export default function SalleDeBain() {
     return (
         <div className="h-screen w-screen bg-[url(/assets/image/salle-de-bain.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5]">
-            <a href="/chambre" title='chambre' className="absolute w-[110px] h-[110px] right-[67%] top-[36%] cursor-pointer hover:bg-red-600 opacity-20"></a>
-            <a href="/bureau" title='bureau' className="absolute w-[100px] h-[100px] right-[35.5%] top-[91%] cursor-pointer hover:bg-red-600 opacity-20"></a>
+            <LinkButton href="/chambre" title='chambre' className="absolute w-[110px] h-[110px] right-[67%] top-[36%]"/>
+            <LinkButton href="/bureau" title='bureau' className="absolute w-[100px] h-[100px] right-[35.5%] top-[91%]"/>
         
             <Dialog>
                 <DialogTrigger className="absolute w-[250px] h-[60px] right-[38%] top-[40%] cursor-pointer hover:bg-red-600 opacity-20"></DialogTrigger>
