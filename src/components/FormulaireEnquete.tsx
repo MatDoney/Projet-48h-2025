@@ -28,8 +28,8 @@ export default function FormulaireEnquete() {
 
         if (
           arme === "couteau" &&
-          lieu === "cuisine" &&
-          coupable === "Bernard"
+          lieu === "chambre" &&
+          coupable === "StarLover69"
         ) {
           window.location.href = "/success";
         } else {
@@ -51,7 +51,6 @@ export default function FormulaireEnquete() {
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
         >
           <option value="pistolet">Pistolet</option>
-          <option value="poison">Poison</option>
           <option value="burger">Burger</option>
           <option value="couteau">Couteau</option>
           <option value="batte">Batte</option>
@@ -94,10 +93,11 @@ export default function FormulaireEnquete() {
           name="coupable"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
         >
-          <option value="Emir">Emir Bourgrignon</option>
+          
           <option value="drZ">Dr. Z</option>
           <option value="Bernard">Bernard Grignon</option>
-          <option value="inconnu">Inconnu</option>
+          <option value="StarLover69">StarLover69</option>
+          <option value="inconnu">Penelope Crous</option>
         </select>
       </div>
 

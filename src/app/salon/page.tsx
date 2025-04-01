@@ -80,7 +80,7 @@ export default function Salon() {
                             <br /> <br /> En effet le celebre tableau de Munch a été volé au musée d'Oslo par 2 individus.
                             <br /> <br /> Le tableau original est estimé à 120 millions de dollars.
                             <br /> <br /> Un Guarde à été blessé par balle à l'épaule en tentant de retenir un des malfrats.
-                            <br /> <br /> La police norvégienne a ouvert une enquête pour les retrouver, une personne a été arrêté après une denonciation anonyme, mais à été relaché.
+                            <br /> <br /> La police norvégienne a ouvert une enquête pour les retrouver, Penelope Crous a été arrêté après une denonciation anonyme, mais à été relaché.
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
