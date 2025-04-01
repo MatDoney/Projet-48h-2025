@@ -16,7 +16,7 @@ export default function Balcon() {
                 <DialogHeader>
                 <DialogTitle>le chien</DialogTitle>
                 <DialogDescription>
-                    le fameux chien du balcon
+                    le fameux chien du balcon, sur son collier il est écrit "Paul"
                 </DialogDescription>
                 </DialogHeader>
             </DialogContent>

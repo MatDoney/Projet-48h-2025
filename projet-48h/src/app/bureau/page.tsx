@@ -23,7 +23,7 @@ export default function Bureau() {
         setOtp(value);
 
         // Vérifie si l'OTP complet est correct
-        if (value === "1234") {
+        if (value === "paul" || value === "Paul" || value === "PAUL") {
             setIsUnlocked(true);
         }
     };

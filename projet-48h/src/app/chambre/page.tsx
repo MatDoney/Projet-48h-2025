@@ -49,7 +49,7 @@ export default function Chambre() {
                     <DialogHeader>
                         <DialogTitle>Trainée de sang</DialogTitle>
                         <DialogDescription>
-                            On dirait qu'on a traîné le corps, il a donc été déplacé.
+                            On dirait qu'on a traîné le corps depuis la chambre, il a donc été déplacé.
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
