@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GameProvider } from "./context/GameContext";
 import "./globals.css";
+import Map from "@/components/ui/map";
 import {
   Dialog,
   DialogContent,
@@ -8,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -18,7 +20,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 
 const geistSans = Geist({
@@ -41,27 +43,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  let i = 0;
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Drawer>
-          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Button</Button></DrawerTrigger>
-          <DrawerContent className="w-[25%] h-[40%]">
-            <DrawerHeader>
-              <DrawerTitle>Map</DrawerTitle>
-              <DrawerDescription></DrawerDescription>
-            </DrawerHeader>
-            <DrawerFooter>
-              <DrawerClose>
-                <Button variant="outline">Close</Button>
-              </DrawerClose>
-            </DrawerFooter>
-          </DrawerContent>
-        </Drawer>
-        {children}  
+        <GameProvider>
+          <div className="absolute top-5 right-5 w-40 h-40 bg-gray-800 p-2 rounded-lg shadow-lg cursor-pointer hover:opacity-90">
+            <Map />
+          </div>
+
+          <Drawer>
+            <DrawerTrigger className="absolute left-10 bottom-10">
+              <Button variant="outline">Button</Button>
+            </DrawerTrigger>
+            <DrawerContent className="w-[25%] h-[40%]">
+              <DrawerHeader>
+                <DrawerTitle>Map</DrawerTitle>
+                <DrawerDescription></DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <DrawerClose>
+                  <Button variant="outline">Close</Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+
+          {children}
+        </GameProvider>
       </body>
     </html>
   );
