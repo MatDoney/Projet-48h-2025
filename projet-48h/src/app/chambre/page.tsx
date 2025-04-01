@@ -29,6 +29,7 @@ export default function Chambre() {
         }
     };
 
+    
     return (
         <div className="h-screen w-screen bg-[url(/assets/image/chambre.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5]">
             <Dialog>
@@ -62,7 +63,7 @@ export default function Chambre() {
                         <DialogTitle>Coffre Fort</DialogTitle>
                         <DialogDescription>
                             {isUnlocked
-                                ? "Un titre de propriété pour l'étoile J18365633+3847012, le nom de la victime y est signé au crayon."
+                                ? "Un titre de propriété pour l'étoile J18365633+3847012, le nom de la victime y est signé au crayon. " 
                                 : "Le coffre est verrouillé, il y a des traces de tentative d'effraction."}
                         </DialogDescription>
                     </DialogHeader>

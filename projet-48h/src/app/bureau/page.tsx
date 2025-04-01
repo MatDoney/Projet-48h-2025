@@ -27,18 +27,23 @@ export default function Bureau() {
       setIsUnlocked(true);
     }
   };
+  // Remplacez les \n par <br /> dans texteForum
+  var texteForum = "<br />StarLover69 :Bernard, t’es vraiment le propriétaire de J18365633+3847012 ? C’est l’étoile la plus fascinante que j’ai jamais vue ! Comment t’as pu acquérir un tel trésor cosmique ?<br /><br />BernardNebuleuse :<br />Oui, je l’ai acquise lors d’une vente intergalactique. J’ai même un titre de propriété officiel signé au crayon, que je garde bien au chaud dans un coffre-fort sécurisé. 😎";
+
   return (
     <div className="h-screen w-screen bg-[url(/assets/image/bureau.png)] bg-no-repeat bg-contain bg-center bg-[#D5D5D5] ">
       <Dialog>
         <DialogTrigger className="absolute w-[70px] h-[60px] right-[48%] top-[40%] cursor-pointer hover:bg-red-600 opacity-20"></DialogTrigger>
-        <DialogContent className="top-[20%] w-[80%] h-[20%]">
+        <DialogContent className="top-[50%] w-[80%] h-[50%]">
           <DialogHeader>
             <DialogTitle>Ordinateur portable</DialogTitle>
-            <DialogDescription>
-              {isUnlocked
-                ? "Ordinateur déverrouillé ! Bienvenue."
-                : "L'ordinateur est verrouillé, il y a un chien en fond d'écran. Veuillez entrer le mot de passe."}
-            </DialogDescription>
+            <DialogDescription
+              dangerouslySetInnerHTML={{
+                __html: isUnlocked
+                  ? "Ordinateur déverrouillé \n Une page est ouverte sur une discussion entre la victime et StarLover69.<br> " + texteForum
+                  : "L'ordinateur est verrouillé, il y a un chien en fond d'écran. Veuillez entrer le mot de passe.",
+              }}
+            />
           </DialogHeader>
           {!isUnlocked && (
             <InputOTP maxLength={4} value={otp} onChange={handleChange}>
