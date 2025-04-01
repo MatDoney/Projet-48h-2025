@@ -59,11 +59,11 @@ export default function Bureau() {
             </Dialog>
 
             <a
-                href="/couloir"
+                href="/couloir" title='couloir'
                 className="absolute w-[118px] h-[105px] top-[87%] right-[59.5%] hover:bg-red-700 opacity-20"
             />
             <a
-                href="/salle-de-bain"
+                href="/salle-de-bain" title='salle de bain'
                 className="absolute w-[100px] h-[100px] top-[83%] right-[36%] hover:bg-red-700 opacity-20"
             />
         </div>

@@ -87,11 +87,11 @@ export default function Chambre() {
             </Dialog>
 
             <a
-                href="/salle-de-bain"
+                href="/salle-de-bain" title='salle de bain'
                 className="absolute w-[90px] h-[60px] right-[32%] top-[1%] cursor-pointer hover:bg-red-600 opacity-20"
             />
             <a
-                href="/salon"
+                href="/salon" title='salon'
                 className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%] cursor-pointer hover:bg-red-600 opacity-20"
             />
         </div>
