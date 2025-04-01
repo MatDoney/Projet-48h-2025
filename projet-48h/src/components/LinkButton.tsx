@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 
 interface ILinkProps {
@@ -8,7 +10,7 @@ interface ILinkProps {
 
 export function LinkButton(props: ILinkProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -16,26 +18,26 @@ export function LinkButton(props: ILinkProps) {
   };
 
   return (
-      <a
-        href={props.href}
-        className={`cursor-pointer hover:bg-red-600 opacity-50 ${props.className}`}
-        onMouseMove={handleMouseMove}
-        onPointerEnter={() => setVisible(true)}
-        onPointerLeave={() => setVisible(false)}
-      >
-        {visible && (
-          <div
-            className="absolute bg-black text-white px-2 py-1 rounded shadow-lg flex items-center justify-center w-3xs"
-            style={{
-              left: `${position.x}px`,
-              top: `${position.y}px`,
-              transform: "translate(10px, 10px)",
-            }}
-          >
+    <a
+      href={props.href}
+      onMouseMove={handleMouseMove}
+      onPointerEnter={() => setVisible(true)}
+      onPointerLeave={() => setVisible(false)}
+    >
+    <div className={`cursor-pointer hover:bg-red-600 opacity-20 ${props.className}`}></div>
+      {visible && (
+        <div
+          className="absolute bg-gray-500 text-white px-2 py-1 rounded shadow-lg flex items-center justify-center w-3xs"
+          style={{
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+            transform: "translate(10px, 10px)",
+          }}
+        >
           {props.title}
-          </div>
-        )}
-      </a>
+        </div>
+      )}
+    </a>
   );
 }
 
