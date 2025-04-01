@@ -20,6 +20,8 @@ export default function Salon() {
                         <DialogTitle>Batte de baseball</DialogTitle>
                         <DialogDescription>
                             Etrange endroit pour retrouver une batte de baseball, mais bon, peut être que la victime s'entrainait sur le trône.
+                            <br></br>
+                            La batte est poussieuse, elle n'a pas du être utilisée depuis longtemps. 
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>

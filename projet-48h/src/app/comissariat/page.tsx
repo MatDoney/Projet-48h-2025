@@ -35,7 +35,7 @@ export default function Comissariat() {
           <DialogHeader>
               <DialogTitle>Mur d'investigation</DialogTitle>
               <DialogDescription>
-                  Il y a eu un meurtre dans un appartement du quartier, la victime est un homme dans la quarantaine, le consièrge nous à donner le code de l'appartement: 7156, je vais en avoir besoin pour entrer dans l'immeuble et enqêter sur l'affaire.
+                  Il y a eu un meurtre dans un appartement du quartier, la victime s'appelle Emir Bourgrignon, un homme dans la quarantaine, le consierge nous a donné le code de l'appartement: 7156, je vais en avoir besoin pour entrer dans l'immeuble et enqulêter sur l'affaire.
               </DialogDescription>
           </DialogHeader>
       </DialogContent>
@@ -53,6 +53,9 @@ export default function Comissariat() {
                 </DialogDescription>
             </DialogHeader>
             {!isRemembered && (
+                <div className="flex items-center mb-4">
+                    <span className="text-gray-500">Entrez le code de l'appartement: &nbsp;&nbsp; </span>
+                
                 <InputOTP
                     maxLength={4}
                     value={otp}
@@ -65,6 +68,7 @@ export default function Comissariat() {
                         <InputOTPSlot index={3} />
                     </InputOTPGroup>
                 </InputOTP>
+                </div>
             )}
         </DialogContent>
     </Dialog>

@@ -82,7 +82,7 @@ export default function Chambre() {
                                 <InputOTPSlot index={6} />
                             </InputOTPGroup>
                         </InputOTP>
-                    )}
+                    )} 
                 </DialogContent>
             </Dialog>
 

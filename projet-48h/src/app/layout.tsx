@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -18,8 +18,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import FormulaireEnquete from "@/components/FormulaireEnquete";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,12 +48,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <audio
+          src="/assets/sound/cosmic-cradle-314706.mp3"
+          hidden
+          autoPlay
+          loop
+        />
         <Drawer>
-          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Rapport d'enquete</Button></DrawerTrigger>
+          <DrawerTrigger className="absolute left-10 bottom-10">
+            <Button variant="outline">Rapport d'enquete</Button>
+          </DrawerTrigger>
           <DrawerContent className="w-[25%] h-[40%]">
             <DrawerHeader>
               <DrawerTitle>Rapport d'enquete</DrawerTitle>
-              <DrawerDescription></DrawerDescription>
+              <DrawerDescription>
+              <FormulaireEnquete />
+              </DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>
               <DrawerClose>
@@ -61,7 +72,7 @@ export default function RootLayout({
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
-        {children}  
+        {children}
       </body>
     </html>
   );
