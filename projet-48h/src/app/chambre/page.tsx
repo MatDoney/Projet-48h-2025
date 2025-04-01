@@ -15,6 +15,7 @@ import {
     InputOTPSeparator,
     InputOTPSlot,
 } from "@/components/ui/input-otp";
+import { LinkButton } from "@/components/LinkButton";
 
 export default function Chambre() {
     const [otp, setOtp] = useState(""); // Utilisation d'une seule chaîne pour l'OTP
@@ -86,13 +87,13 @@ export default function Chambre() {
                 </DialogContent>
             </Dialog>
 
-            <a
+            <LinkButton
                 href="/salle-de-bain" title='salle de bain'
-                className="absolute w-[90px] h-[60px] right-[32%] top-[1%] cursor-pointer hover:bg-red-600 opacity-20"
+                className="absolute w-[90px] h-[60px] right-[32%] top-[1%]"
             />
-            <a
+            <LinkButton
                 href="/salon" title='salon'
-                className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%] cursor-pointer hover:bg-red-600 opacity-20"
+                className="absolute w-[100px] h-[100px] right-[65.2%] top-[3%]"
             />
         </div>
     );

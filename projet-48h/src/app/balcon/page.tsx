@@ -1,3 +1,4 @@
+import { LinkButton } from "@/components/LinkButton";
 import {
     Dialog,
     DialogContent,
@@ -34,8 +35,8 @@ export default function Balcon() {
             </DialogContent>
             </Dialog>
 
-            <a href="/cuisine" title='cuisine' className="absolute w-[105px] h-[95px] top-[18%] right-[70.5%] hover:bg-red-700 opacity-20"/>
-            <a href="/salon" title='salon' className="absolute w-[118px] h-[95px] top-[7%] right-[37.5%] hover:bg-red-700 opacity-20"/>
+            <LinkButton href="/cuisine" title='cuisine' className="absolute w-[105px] h-[95px] top-[18%] right-[70.5%]"/>
+            <LinkButton href="/salon" title='salon' className="absolute w-[118px] h-[95px] top-[7%] right-[37.5%]"/>
         </div>
     );
   }

@@ -14,6 +14,7 @@ import {
     InputOTPGroup,
     InputOTPSlot,
 } from "@/components/ui/input-otp";
+import { LinkButton } from "@/components/LinkButton";
 
 export default function Bureau() {
     const [otp, setOtp] = useState(""); // Utilisation d'une seule chaîne pour l'OTP
@@ -58,13 +59,13 @@ export default function Bureau() {
                 </DialogContent>
             </Dialog>
 
-            <a
+            <LinkButton
                 href="/couloir" title='couloir'
-                className="absolute w-[118px] h-[105px] top-[87%] right-[59.5%] hover:bg-red-700 opacity-20"
+                className="absolute w-[118px] h-[105px] top-[87%] right-[59.5%]"
             />
-            <a
+            <LinkButton
                 href="/salle-de-bain" title='salle de bain'
-                className="absolute w-[100px] h-[100px] top-[83%] right-[36%] hover:bg-red-700 opacity-20"
+                className="absolute w-[100px] h-[100px] top-[83%] right-[36%]"
             />
         </div>
     );

@@ -1,3 +1,4 @@
+import { LinkButton } from "@/components/LinkButton";
 import {
     Dialog,
     DialogContent,
@@ -35,8 +36,8 @@ export default function Cuisine() {
                     </DialogHeader>
                 </DialogContent>
             </Dialog>
-            <a href="/couloir" title='couloir' className="absolute w-[118px] h-[122px] top-[83.5%] right-[65%] hover:bg-red-700 opacity-20"/>
-            <a href="/balcon" title = 'balcon' className="absolute w-[118px] h-[122px] top-[1.5%] right-[78%] hover:bg-red-700 opacity-20"/>
+            <LinkButton href="/couloir" title='couloir' className="absolute w-[118px] h-[122px] top-[83.5%] right-[65%]"/>
+            <LinkButton href="/balcon" title ='balcon' className="absolute w-[118px] h-[122px] top-[1.5%] right-[78%]"/>
         </div>
     );
 }
