@@ -37,7 +37,7 @@ export default function Chambre() {
                     <DialogHeader>
                         <DialogTitle>Main Ensanglantée</DialogTitle>
                         <DialogDescription>
-                            Une trace de main est dessinée avec du sang, à qui peut-elle appartenir ?
+                            Une trace de main est dessinée avec du sang, le tueur à du s'appuyer sur la porte
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
@@ -62,7 +62,7 @@ export default function Chambre() {
                         <DialogTitle>Coffre Fort</DialogTitle>
                         <DialogDescription>
                             {isUnlocked
-                                ? "Coffre déverrouillé ! Vous avez trouvé un indice."
+                                ? "Un titre de propriété pour l'étoile J18365633+3847012, le nom de la victime y est signé au crayon."
                                 : "Le coffre est verrouillé, il y a des traces de tentative d'effraction."}
                         </DialogDescription>
                     </DialogHeader>

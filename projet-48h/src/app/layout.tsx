@@ -48,10 +48,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Drawer>
-          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Button</Button></DrawerTrigger>
+          <DrawerTrigger className="absolute left-10 bottom-10"><Button variant="outline">Rapport d'enquete</Button></DrawerTrigger>
           <DrawerContent className="w-[25%] h-[40%]">
             <DrawerHeader>
-              <DrawerTitle>Map</DrawerTitle>
+              <DrawerTitle>Rapport d'enquete</DrawerTitle>
               <DrawerDescription></DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>

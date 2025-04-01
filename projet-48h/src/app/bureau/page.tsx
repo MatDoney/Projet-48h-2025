@@ -38,7 +38,7 @@ export default function Bureau() {
                         <DialogDescription>
                             {isUnlocked
                                 ? "Ordinateur déverrouillé ! Bienvenue."
-                                : "Entrez le mot de passe pour déverrouiller l'ordinateur"}
+                                : "L'ordinateur est verrouillé, il y a un chien en fond d'écran. Veuillez entrer le mot de passe."}
                         </DialogDescription>
                     </DialogHeader>
                     {!isUnlocked && (
