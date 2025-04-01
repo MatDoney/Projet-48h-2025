@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   let i = 0;
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-hidden">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
