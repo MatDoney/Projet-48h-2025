@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projet 48h - Enquête Interactive
 
-## Getting Started
+Bienvenue dans le projet **48h**, une enquête interactive où vous incarnez un détective chargé de résoudre un meurtre mystérieux. Explorez les différentes pièces d'un appartement, collectez des indices, et identifiez le coupable pour résoudre l'affaire.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🕵️‍♂️ Trame du Projet
+
+Un meurtre a été commis dans un appartement du quartier. La victime, Bernard Grignon, a été retrouvée morte dans le salon. Vous devez explorer les différentes pièces de l'appartement, interagir avec les objets, et collecter des indices pour découvrir :
+
+- **L'arme du crime**
+- **Le lieu du meurtre**
+- **Le coupable**
+
+### Objectif
+
+Votre objectif est de remplir le rapport d'enquête en sélectionnant les bonnes réponses. Si vous réussissez, vous résolvez l'affaire et gagnez. Sinon, vous devrez recommencer.
+
+---
+
+## 🚀 Guide d'Installation
+
+### Étapes d'installation
+
+### 1. **Cloner le dépôt**
+   ``` bash
+   git clone https://github.com/MatDoney/Projet-48h-2025/
+   cd Projet-48h-2025
+   ```
+### 2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+### 3. **Lancer l'application**
+   ```bash
+    npm run dev
 ```
+### 4. **Accéder à l'application**
+   Ouvrez votre navigateur et allez à [http://localhost:3000](http://localhost:3000).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Solution
+Pour ceux qui souhaitent voir la solution, voici les réponses correctes à l'enquête :
+- **L'arme du crime** : Couteau
+- **Le lieu du meurtre** : Chambre
+- **Le coupable** : StarLover69

@@ -35,7 +35,7 @@ export default function Comissariat() {
           <DialogHeader>
               <DialogTitle>Mur d'investigation</DialogTitle>
               <DialogDescription>
-                  Il y a eu un meurtre dans un appartement du quartier, la victime s'appelle Emir Bourgrignon, un homme dans la quarantaine, le consierge nous a donné le code de l'appartement: 7156, je vais en avoir besoin pour entrer dans l'immeuble et enqulêter sur l'affaire.
+                  Il y a eu un meurtre dans un appartement du quartier, la victime s'appelle Bernard Grignon, un homme dans la quarantaine, le consierge nous a donné le code de l'appartement: 7156, je vais en avoir besoin pour entrer dans l'immeuble et enqulêter sur l'affaire.
               </DialogDescription>
           </DialogHeader>
       </DialogContent>

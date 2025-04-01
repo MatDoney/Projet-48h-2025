@@ -94,7 +94,7 @@ export default function FormulaireEnquete() {
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
         >
           
-          <option value="drZ">Dr. Z</option>
+          <option value="drZ">Jacque Chiraq</option>
           <option value="Bernard">Bernard Grignon</option>
           <option value="StarLover69">StarLover69</option>
           <option value="inconnu">Penelope Crous</option>

@@ -31,7 +31,7 @@ export default function Cuisine() {
                     <DialogHeader>
                         <DialogTitle>Couteau Propre</DialogTitle>
                         <DialogDescription>
-                            Un couteau très tranchant, etrange de le laisser sorti pour ne pas s'en servir.
+                            Un couteau propre très tranchant, étrange de le laisser sorti pour ne pas s'en servir.
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>

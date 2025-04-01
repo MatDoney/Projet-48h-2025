@@ -42,6 +42,10 @@ const Map = () => {
         setPlayerX(45);
         setPlayerY(45);
         break;
+      case 'toilette':
+        setPlayerX(52);
+        setPlayerY(45);
+        break;
       default:
         setPlayerX(0);
         setPlayerY(0);

@@ -61,7 +61,7 @@ export default function RootLayout({
             <Map />
           </div>
         <Drawer>
-          <DrawerTrigger className="absolute left-10 bottom-10">
+          <DrawerTrigger className="absolute left-10 bottom-18">
             <Button variant="outline">Rapport d'enquete</Button>
           </DrawerTrigger>
           <DrawerContent className="w-[25%] h-[40%]">
